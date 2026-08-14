@@ -6,13 +6,14 @@ A sample Salesforce Einstein Bot package for use as a **bot-to-Agentforce migrat
 
 | File | Description |
 |------|-------------|
-| `bots/emirates_demo.bot` | Einstein Bot metadata — dialogs, intents, navigation flows |
-| `classes/Airline_Service_GetAirports.cls` | Invocable Apex: returns list of available airports |
-| `classes/Airline_Service_GetFlights.cls` | Invocable Apex: returns available flights for a route |
-| `classes/EmiratesCreateBooking.cls` | Invocable Apex: stub for creating a booking |
-| `classes/EmiratesCancelBooking.cls` | Invocable Apex: stub for cancelling a booking |
-| `classes/EmiratesFetchFlightStatus.cls` | Invocable Apex: stub for checking flight status |
-| `package.xml` | Salesforce metadata manifest (API v65.0) |
+| `force-app/main/default/bots/emirates_demo.bot` | Einstein Bot metadata — dialogs, intents, navigation flows |
+| `force-app/main/default/classes/Airline_Service_GetAirports.cls` | Invocable Apex: returns list of available airports |
+| `force-app/main/default/classes/Airline_Service_GetFlights.cls` | Invocable Apex: returns available flights for a route |
+| `force-app/main/default/classes/EmiratesCreateBooking.cls` | Invocable Apex: stub for creating a booking |
+| `force-app/main/default/classes/EmiratesCancelBooking.cls` | Invocable Apex: stub for cancelling a booking |
+| `force-app/main/default/classes/EmiratesFetchFlightStatus.cls` | Invocable Apex: stub for checking flight status |
+| `manifest/package.xml` | Salesforce metadata manifest (API v65.0) |
+| `sfdx-project.json` | SFDX project config |
 
 ## Bot Capabilities
 
@@ -37,20 +38,21 @@ The Emirates demo bot handles these conversation flows:
 ### Deploy to Your Org
 
 ```bash
+# Clone the repo
+git clone https://github.com/VGBRO/emirates-bot-demo.git
+cd emirates-bot-demo
+
 # Authenticate to your org
 sf org login web --alias my-demo-org
 
-# Deploy the Apex classes first
-sf project deploy start --source-dir classes --target-org my-demo-org
-
-# Deploy the bot
-sf project deploy start --source-dir bots --target-org my-demo-org
+# Deploy everything using the manifest
+sf project deploy start --manifest manifest/package.xml --target-org my-demo-org
 ```
 
-Or deploy everything at once using the package manifest:
+Or deploy source directly (without manifest):
 
 ```bash
-sf project deploy start --manifest package.xml --target-org my-demo-org
+sf project deploy start --source-dir force-app --target-org my-demo-org
 ```
 
 ## Training Exercise: Migrate to Agentforce
