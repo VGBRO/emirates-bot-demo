@@ -33,7 +33,7 @@ The Emirates demo bot handles these conversation flows:
 ### Prerequisites
 - Salesforce CLI (`sf`) v2+
 - A Salesforce Developer Org or Sandbox (API v65.0+)
-- Einstein Bots enabled in the target org
+- **Einstein Bots enabled** in the target org — Setup → Einstein Bots → Enable. Without this, deployment fails with `You don't have access to bots of type Bot.`
 
 ### Deploy to Your Org
 
