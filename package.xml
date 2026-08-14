@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>emirates_demo</fullName>
+    <types>
+        <members>Airline_Service_GetAirports</members>
+        <members>Airline_Service_GetFlights</members>
+        <members>EmiratesCancelBooking</members>
+        <members>EmiratesCreateBooking</members>
+        <members>EmiratesFetchFlightStatus</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>emirates_demo</members>
+        <name>Bot</name>
+    </types>
+    <types>
+        <members>emirates_demo.v1</members>
+        <name>BotVersion</name>
+    </types>
+    <version>65.0</version>
+</Package>
