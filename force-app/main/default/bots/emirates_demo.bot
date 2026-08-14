@@ -4,89 +4,85 @@
     <botMlDomain>
         <label>emirates demo</label>
         <mlIntents>
+            <description>Queries related to flight tracking</description>
+            <developerName>Booking_Query</developerName>
+            <label>Booking Query</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Emirates_Intents.Booking_Query</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
             <description>Bookings menu</description>
             <developerName>Bookings_Menu</developerName>
             <label>Bookings Menu</label>
+        </mlIntents>
+        <mlIntents>
+            <description>Handles booking cancellation</description>
+            <developerName>Cancel_booking</developerName>
+            <label>Cancel booking</label>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>I want to book my flight</utterance>
+                <utterance>cancel my booking</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>I want to modify my booking</utterance>
+                <utterance>I want to cancel my flight</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Reschedule my booking</utterance>
+                <utterance>cancel booking</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Cancel my booking</utterance>
+                <utterance>please cancel my reservation</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Create booking</utterance>
+                <utterance>I need to cancel my ticket</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Cancel flight</utterance>
+                <utterance>delete my flight booking</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Reschedule flight</utterance>
+                <utterance>cancel my trip</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>I need to reserve a seat</utterance>
+                <utterance>I can&apos;t travel</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Make a new reservation</utterance>
+                <utterance>cancel the flight I booked</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Change my flight</utterance>
+                <utterance>remove my booking</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Modify my reservation</utterance>
+                <utterance>cancel my flight</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>I want to cancel my ticket</utterance>
+                <utterance>call off my reservation</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Cancel my reservation</utterance>
+                <utterance>cancel flight</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Reschedule to another date</utterance>
+                <utterance>I&apos;d like to cancel booking</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Change my travel dates</utterance>
+                <utterance>scrap my flight booking</utterance>
             </mlIntentUtterances>
-            <mlIntentUtterances>
-                <language>en_US</language>
-                <utterance>Help me with my booking</utterance>
-            </mlIntentUtterances>
-            <mlIntentUtterances>
-                <language>en_US</language>
-                <utterance>I need to manage my booking</utterance>
-            </mlIntentUtterances>
-            <mlIntentUtterances>
-                <language>en_US</language>
-                <utterance>Rebook my flight</utterance>
-            </mlIntentUtterances>
-            <mlIntentUtterances>
-                <language>en_US</language>
-                <utterance>Update my flight details</utterance>
-            </mlIntentUtterances>
-            <mlIntentUtterances>
-                <language>en_US</language>
-                <utterance>book my flight again</utterance>
-            </mlIntentUtterances>
+            <relatedMlIntents>
+                <relatedMlIntent>Emirates_Intents.Cancel_Booking</relatedMlIntent>
+            </relatedMlIntents>
         </mlIntents>
         <mlIntents>
             <description>Handles job applications</description>
@@ -123,28 +119,71 @@
             <label>Create Booking</label>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Create a booking</utterance>
+                <utterance>book a flight</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>I want to create a booking</utterance>
+                <utterance>I want to book a flight</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Create a new booking</utterance>
+                <utterance>reserve a seat</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>I want to register a booking</utterance>
+                <utterance>can you help me book a ticket</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Book a flight</utterance>
+                <utterance>I need to fly</utterance>
             </mlIntentUtterances>
             <mlIntentUtterances>
                 <language>en_US</language>
-                <utterance>Create a flight booking</utterance>
+                <utterance>book me a flight</utterance>
             </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>I&apos;d like to make a new reservation</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>can I book a flight</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>get me a flight</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>schedule a flight for me</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>I want to purchase an airline ticket</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>new flight booking please</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>I need to travel — please book my flight</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>book a seat</utterance>
+            </mlIntentUtterances>
+            <mlIntentUtterances>
+                <language>en_US</language>
+                <utterance>reserve a flight seat</utterance>
+            </mlIntentUtterances>
+            <relatedMlIntents>
+                <relatedMlIntent>Emirates_Intents.Create_Booking</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
+        <mlIntents>
+            <developerName>Knowledge_Action</developerName>
+            <label>Answer Questions with Knowledge</label>
         </mlIntents>
         <mlIntents>
             <description>Shopping and Merchandise</description>
@@ -180,10 +219,16 @@
             <developerName>Queries_Menu</developerName>
             <label>Queries Menu</label>
         </mlIntents>
+        <mlIntents>
+            <developerName>Small_Talk</developerName>
+            <label>Small Talk</label>
+            <relatedMlIntents>
+                <relatedMlIntent>Emirates_Intents.Small_Talk</relatedMlIntent>
+            </relatedMlIntents>
+        </mlIntents>
         <name>emirates_demo</name>
     </botMlDomain>
     <botSource>None</botSource>
-    <botUser></botUser>
     <botVersions>
         <fullName>v1</fullName>
         <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
@@ -199,82 +244,26 @@
             <botSteps>
                 <botMessages>
                     <message>{!$System.KnowledgeActionResult.Answer}</message>
-                    <messageIdentifier>f977fc50-f62f-42f5-8908-05e3da146fa6</messageIdentifier>
+                    <messageIdentifier>f3c1c9af-4bdd-3054-db4e-f59b868c779f</messageIdentifier>
                 </botMessages>
-                <stepIdentifier>f7659476-f842-4286-b1c2-9c50c90bdd55</stepIdentifier>
+                <stepIdentifier>a9d7ea27-ced2-4c4b-acdd-2b709c667aab</stepIdentifier>
                 <type>Message</type>
             </botSteps>
             <botSteps>
-                <botVariableOperation>
-                    <askCollectIfSet>true</askCollectIfSet>
-                    <botMessages>
-                        <message>Was this useful?</message>
-                        <messageIdentifier>124b2a7a-74a5-4577-9f0f-d7ca2ec20b31</messageIdentifier>
-                    </botMessages>
-                    <botQuickReplyOptions>
-                        <literalValue>Yes</literalValue>
-                        <quickReplyOptionIdentifier>aab36662-ef3f-4ed9-b06a-509c4c82f595</quickReplyOptionIdentifier>
-                    </botQuickReplyOptions>
-                    <botQuickReplyOptions>
-                        <literalValue>No</literalValue>
-                        <quickReplyOptionIdentifier>9c65dbd8-33c5-4c12-a175-333c424b12b5</quickReplyOptionIdentifier>
-                    </botQuickReplyOptions>
-                    <botVariableOperands>
-                        <disableAutoFill>true</disableAutoFill>
-                        <sourceName>_Boolean</sourceName>
-                        <sourceType>StandardMlSlotClass</sourceType>
-                        <targetName>KnowledgeActionFeedback</targetName>
-                        <targetType>ConversationVariable</targetType>
-                    </botVariableOperands>
-                    <ignoreIntentRecognition>false</ignoreIntentRecognition>
-                    <optionalCollect>false</optionalCollect>
-                    <quickReplyType>Static</quickReplyType>
-                    <quickReplyWidgetType>Buttons</quickReplyWidgetType>
-                    <type>Collect</type>
-                    <variableOperationIdentifier>01624abe-14de-4405-bed9-c9d7ea00fb2e</variableOperationIdentifier>
-                </botVariableOperation>
-                <stepIdentifier>a7aeba71-e719-4a39-8fab-7f1427678c74</stepIdentifier>
-                <type>VariableOperation</type>
-            </botSteps>
-            <botSteps>
-                <botInvocation>
-                    <invocationActionName>generateKnowledgeLogData</invocationActionName>
-                    <invocationActionType>logFeedback</invocationActionType>
-                    <invocationMappings>
-                        <parameterName>selectedResult</parameterName>
-                        <type>Input</type>
-                        <variableName>_KnowledgeActionResult</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>results</parameterName>
-                        <type>Input</type>
-                        <variableName>_KnowledgeActionCitations</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>input</parameterName>
-                        <type>Input</type>
-                        <variableName>_AnswerInput</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                    <invocationMappings>
-                        <parameterName>feedback</parameterName>
-                        <type>Input</type>
-                        <variableName>KnowledgeActionFeedback</variableName>
-                        <variableType>ConversationVariable</variableType>
-                    </invocationMappings>
-                </botInvocation>
-                <stepIdentifier>0ff9e722-8617-43fb-a5f9-068463368cb6</stepIdentifier>
-                <type>Invocation</type>
-            </botSteps>
-            <botSteps>
+                <botNavigation>
+                    <botNavigationLinks>
+                        <targetBotDialog>Main_Menu</targetBotDialog>
+                    </botNavigationLinks>
+                    <type>Redirect</type>
+                </botNavigation>
                 <stepIdentifier>33626ec7-70d1-465c-a0fe-657afba35e92</stepIdentifier>
-                <type>Wait</type>
+                <type>Navigation</type>
             </botSteps>
             <developerName>Knowledge_Action</developerName>
             <isPlaceholderDialog>false</isPlaceholderDialog>
             <label>Answer Questions with Knowledge</label>
+            <mlIntent>Knowledge_Action</mlIntent>
+            <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
             <showInFooterMenu>false</showInFooterMenu>
         </botDialogs>
         <botDialogs>
@@ -555,14 +544,14 @@
                 <botVariableOperation>
                     <askCollectIfSet>true</askCollectIfSet>
                     <botMessages>
-                        <message>Enter your departure date (DD-MM-YYYY format).</message>
+                        <message>Provide your departure date (MM-DD-YYYY format).</message>
                         <messageIdentifier>ca82715e-4bec-43c4-ad96-04a89b296a84</messageIdentifier>
                     </botMessages>
                     <botVariableOperands>
-                        <disableAutoFill>true</disableAutoFill>
-                        <sourceName>_Text</sourceName>
+                        <disableAutoFill>false</disableAutoFill>
+                        <sourceName>_Date</sourceName>
                         <sourceType>StandardMlSlotClass</sourceType>
-                        <targetName>Booking_Date</targetName>
+                        <targetName>Booking_Departure_Date</targetName>
                         <targetType>ConversationVariable</targetType>
                     </botVariableOperands>
                     <optionalCollect>false</optionalCollect>
@@ -577,14 +566,14 @@
                 <botVariableOperation>
                     <askCollectIfSet>true</askCollectIfSet>
                     <botMessages>
-                        <message>Enter your arrival date (DD-MM-YYYY format).</message>
+                        <message>Enter your return date (MM-DD-YYYY format).</message>
                         <messageIdentifier>136b82ed-1a20-49f1-987e-4062427af90c</messageIdentifier>
                     </botMessages>
                     <botVariableOperands>
-                        <disableAutoFill>true</disableAutoFill>
-                        <sourceName>_Text</sourceName>
+                        <disableAutoFill>false</disableAutoFill>
+                        <sourceName>_Date</sourceName>
                         <sourceType>StandardMlSlotClass</sourceType>
-                        <targetName>Booking_Return_Date</targetName>
+                        <targetName>Booking_Arrival_Date</targetName>
                         <targetType>ConversationVariable</targetType>
                     </botVariableOperands>
                     <optionalCollect>false</optionalCollect>
@@ -599,11 +588,11 @@
                 <botVariableOperation>
                     <askCollectIfSet>true</askCollectIfSet>
                     <botMessages>
-                        <message>Enter passengers number</message>
+                        <message>How many passengers?</message>
                         <messageIdentifier>67a3fc51-9ab7-4951-9ad5-e5f3c16eed78</messageIdentifier>
                     </botMessages>
                     <botVariableOperands>
-                        <disableAutoFill>true</disableAutoFill>
+                        <disableAutoFill>false</disableAutoFill>
                         <sourceName>_Number</sourceName>
                         <sourceType>StandardMlSlotClass</sourceType>
                         <targetName>Booking_Passengers_Number</targetName>
@@ -622,12 +611,12 @@
                     <askCollectIfSet>true</askCollectIfSet>
                     <autoSelectIfSingleChoice>true</autoSelectIfSingleChoice>
                     <botInvocation>
-                        <invocationActionName>Airline_Service_GetAirports</invocationActionName>
+                        <invocationActionName>EmiratesGetAirports</invocationActionName>
                         <invocationActionType>apex</invocationActionType>
                         <invocationMappings>
                             <parameterName>airportName</parameterName>
                             <type>Input</type>
-                            <variableName>Booking_Source</variableName>
+                            <variableName>Booking_Destination</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
@@ -636,7 +625,7 @@
                         </invocationMappings>
                     </botInvocation>
                     <botMessages>
-                        <message>Select the source of your journey</message>
+                        <message>where are you flying from?</message>
                         <messageIdentifier>88d6a9fb-bf17-42fc-a0f0-59eab2de3973</messageIdentifier>
                     </botMessages>
                     <botVariableOperands>
@@ -667,12 +656,12 @@
                     <askCollectIfSet>true</askCollectIfSet>
                     <autoSelectIfSingleChoice>true</autoSelectIfSingleChoice>
                     <botInvocation>
-                        <invocationActionName>Airline_Service_GetAirports</invocationActionName>
+                        <invocationActionName>EmiratesGetAirports</invocationActionName>
                         <invocationActionType>apex</invocationActionType>
                         <invocationMappings>
                             <parameterName>airportName</parameterName>
                             <type>Input</type>
-                            <variableName>Booking_Destination</variableName>
+                            <variableName>Booking_Source</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
@@ -681,7 +670,7 @@
                         </invocationMappings>
                     </botInvocation>
                     <botMessages>
-                        <message>Select the destination of your journey</message>
+                        <message>where are you flying to?</message>
                         <messageIdentifier>2942c915-25c4-4aa6-811c-d83a2f1515ad</messageIdentifier>
                     </botMessages>
                     <botVariableOperands>
@@ -712,8 +701,14 @@
                     <askCollectIfSet>true</askCollectIfSet>
                     <autoSelectIfSingleChoice>true</autoSelectIfSingleChoice>
                     <botInvocation>
-                        <invocationActionName>Airline_Service_GetFlights</invocationActionName>
+                        <invocationActionName>EmiratesGetFlights</invocationActionName>
                         <invocationActionType>apex</invocationActionType>
+                        <invocationMappings>
+                            <parameterName>departureDate</parameterName>
+                            <type>Input</type>
+                            <variableName>Booking_Departure_Date</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
                         <invocationMappings>
                             <parameterName>passengerCount</parameterName>
                             <type>Input</type>
@@ -721,9 +716,9 @@
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
-                            <parameterName>departureDate</parameterName>
+                            <parameterName>arrivalDate</parameterName>
                             <type>Input</type>
-                            <variableName>Booking_Date</variableName>
+                            <variableName>Booking_Arrival_Date</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
@@ -736,12 +731,6 @@
                             <parameterName>destinationCode</parameterName>
                             <type>Input</type>
                             <variableName>Booking_Destination</variableName>
-                            <variableType>ConversationVariable</variableType>
-                        </invocationMappings>
-                        <invocationMappings>
-                            <parameterName>returnDate</parameterName>
-                            <type>Input</type>
-                            <variableName>Booking_Return_Date</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
@@ -791,9 +780,9 @@
                         <invocationActionName>EmiratesCreateBooking</invocationActionName>
                         <invocationActionType>apex</invocationActionType>
                         <invocationMappings>
-                            <parameterName>booking_date</parameterName>
+                            <parameterName>departure_date</parameterName>
                             <type>Input</type>
-                            <variableName>Booking_Date</variableName>
+                            <variableName>Booking_Departure_Date</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
@@ -809,15 +798,27 @@
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
+                            <parameterName>source</parameterName>
+                            <type>Input</type>
+                            <variableName>Booking_Source</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>arrival_date</parameterName>
+                            <type>Input</type>
+                            <variableName>Booking_Arrival_Date</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
                             <parameterName>profile_id</parameterName>
                             <type>Input</type>
                             <variableName>Profile_Id</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
-                            <parameterName>source</parameterName>
-                            <type>Input</type>
-                            <variableName>Booking_Source</variableName>
+                            <parameterName>is_success</parameterName>
+                            <type>Output</type>
+                            <variableName>Op_Status</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
@@ -826,16 +827,22 @@
                             <variableName>Booking_Id</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>message</parameterName>
+                            <type>Output</type>
+                            <variableName>Create_Booking_Response_Message</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
                     </botInvocation>
                     <type>Set</type>
-                    <variableOperationIdentifier>5d42a45c-0bca-4d3e-830b-e6925022abab</variableOperationIdentifier>
+                    <variableOperationIdentifier>546a0a12-ed16-477b-874a-4bf8736d08dc</variableOperationIdentifier>
                 </botVariableOperation>
                 <stepIdentifier>862b3348-9998-43fd-b948-a161feecc226</stepIdentifier>
                 <type>VariableOperation</type>
             </botSteps>
             <botSteps>
                 <botMessages>
-                    <message>Your booking is confirmed. Id - {!Booking_Id}</message>
+                    <message>{!Create_Booking_Response_Message}</message>
                     <messageIdentifier>bd9bca22-a6c8-444b-8075-818ea4b829dc</messageIdentifier>
                 </botMessages>
                 <stepIdentifier>a14cee80-603a-4b7a-9bd9-477fcf2c9c9c</stepIdentifier>
@@ -856,7 +863,7 @@
             <isPlaceholderDialog>false</isPlaceholderDialog>
             <label>Create Booking</label>
             <mlIntent>Create_Booking</mlIntent>
-            <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
+            <mlIntentTrainingEnabled>true</mlIntentTrainingEnabled>
             <showInFooterMenu>false</showInFooterMenu>
         </botDialogs>
         <botDialogs>
@@ -895,21 +902,27 @@
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                         <invocationMappings>
-                            <parameterName>cancel_result</parameterName>
+                            <parameterName>is_success</parameterName>
                             <type>Output</type>
-                            <variableName>Cancel_Booking_Status</variableName>
+                            <variableName>Op_Status</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>message</parameterName>
+                            <type>Output</type>
+                            <variableName>Booking_Cancel_Response</variableName>
                             <variableType>ConversationVariable</variableType>
                         </invocationMappings>
                     </botInvocation>
                     <type>Set</type>
-                    <variableOperationIdentifier>51c3c519-2d1a-4fc3-aa0f-b6c9e62fb9b6</variableOperationIdentifier>
+                    <variableOperationIdentifier>d23ce663-e31f-41a0-9c16-b0481783b464</variableOperationIdentifier>
                 </botVariableOperation>
                 <stepIdentifier>eb320c48-5046-469f-8b43-fae3e51316d1</stepIdentifier>
                 <type>VariableOperation</type>
             </botSteps>
             <botSteps>
                 <botMessages>
-                    <message>Cancel request processed. Status - {!Cancel_Booking_Status}</message>
+                    <message>{!Booking_Cancel_Response}</message>
                     <messageIdentifier>8b297aa1-0070-4591-83f5-00c9a275b8b4</messageIdentifier>
                 </botMessages>
                 <stepIdentifier>53038275-d5ed-4b84-b538-9ad16ad66a38</stepIdentifier>
@@ -929,78 +942,8 @@
             <developerName>Cancel_booking</developerName>
             <isPlaceholderDialog>false</isPlaceholderDialog>
             <label>Cancel booking</label>
-            <showInFooterMenu>false</showInFooterMenu>
-        </botDialogs>
-        <botDialogs>
-            <botDialogGroup>Queries</botDialogGroup>
-            <botSteps>
-                <botVariableOperation>
-                    <askCollectIfSet>true</askCollectIfSet>
-                    <botMessages>
-                        <message>Please enter the flight id you want to track.</message>
-                        <messageIdentifier>defdfd90-5c39-480b-9b94-fb91a51d32eb</messageIdentifier>
-                    </botMessages>
-                    <botVariableOperands>
-                        <disableAutoFill>true</disableAutoFill>
-                        <sourceName>_Text</sourceName>
-                        <sourceType>StandardMlSlotClass</sourceType>
-                        <targetName>Flight_Id</targetName>
-                        <targetType>ConversationVariable</targetType>
-                    </botVariableOperands>
-                    <optionalCollect>false</optionalCollect>
-                    <quickReplyWidgetType>Buttons</quickReplyWidgetType>
-                    <type>Collect</type>
-                    <variableOperationIdentifier>11e77092-b06c-4e70-be22-c4433dddb321</variableOperationIdentifier>
-                </botVariableOperation>
-                <stepIdentifier>167f1fae-7437-4a28-a55c-7375779112e9</stepIdentifier>
-                <type>VariableOperation</type>
-            </botSteps>
-            <botSteps>
-                <botVariableOperation>
-                    <botInvocation>
-                        <invocationActionName>EmiratesFetchFlightStatus</invocationActionName>
-                        <invocationActionType>apex</invocationActionType>
-                        <invocationMappings>
-                            <parameterName>flight_id</parameterName>
-                            <type>Input</type>
-                            <variableName>Flight_Id</variableName>
-                            <variableType>ConversationVariable</variableType>
-                        </invocationMappings>
-                        <invocationMappings>
-                            <parameterName>flight_status_result</parameterName>
-                            <type>Output</type>
-                            <variableName>Flight_Tracking_Status</variableName>
-                            <variableType>ConversationVariable</variableType>
-                        </invocationMappings>
-                    </botInvocation>
-                    <type>Set</type>
-                    <variableOperationIdentifier>237e7f86-b85a-43a5-95c0-22598f7a235f</variableOperationIdentifier>
-                </botVariableOperation>
-                <stepIdentifier>d9acc399-e29e-42e8-84eb-260192c16c0f</stepIdentifier>
-                <type>VariableOperation</type>
-            </botSteps>
-            <botSteps>
-                <botMessages>
-                    <message>Current flight status is - {!Flight_Tracking_Status}</message>
-                    <messageIdentifier>5486567e-5eb5-404b-a53d-3268476c249e</messageIdentifier>
-                </botMessages>
-                <stepIdentifier>bb102aef-8290-4ce7-b285-cb4145b3aaf9</stepIdentifier>
-                <type>Message</type>
-            </botSteps>
-            <botSteps>
-                <botNavigation>
-                    <botNavigationLinks>
-                        <targetBotDialog>Main_Menu</targetBotDialog>
-                    </botNavigationLinks>
-                    <type>Redirect</type>
-                </botNavigation>
-                <stepIdentifier>e3b05e19-4226-48fe-bf57-48ebae2e4a12</stepIdentifier>
-                <type>Navigation</type>
-            </botSteps>
-            <description>Queries related to flight tracking</description>
-            <developerName>Flight_Tracking</developerName>
-            <isPlaceholderDialog>false</isPlaceholderDialog>
-            <label>Flight Tracking</label>
+            <mlIntent>Cancel_booking</mlIntent>
+            <mlIntentTrainingEnabled>true</mlIntentTrainingEnabled>
             <showInFooterMenu>false</showInFooterMenu>
         </botDialogs>
         <botDialogs>
@@ -1016,7 +959,7 @@
             <botSteps>
                 <botNavigation>
                     <botNavigationLinks>
-                        <targetBotDialog>Flight_Tracking</targetBotDialog>
+                        <targetBotDialog>Booking_Query</targetBotDialog>
                     </botNavigationLinks>
                     <type>Redirect</type>
                 </botNavigation>
@@ -1035,7 +978,7 @@
             <botDialogGroup>Bookings</botDialogGroup>
             <botSteps>
                 <botMessages>
-                    <message>Great! Let&apos;s look at your bookings!</message>
+                    <message>Please choose an option.</message>
                     <messageIdentifier>3fc1adc7-d8bd-4b27-a853-b9bf20b6da4b</messageIdentifier>
                 </botMessages>
                 <stepIdentifier>101d0ce2-847b-4237-a630-7499b42e78cc</stepIdentifier>
@@ -1060,6 +1003,86 @@
             <label>Bookings</label>
             <mlIntent>Bookings_Menu</mlIntent>
             <mlIntentTrainingEnabled>false</mlIntentTrainingEnabled>
+            <showInFooterMenu>false</showInFooterMenu>
+        </botDialogs>
+        <botDialogs>
+            <botDialogGroup>Queries</botDialogGroup>
+            <botSteps>
+                <botVariableOperation>
+                    <askCollectIfSet>true</askCollectIfSet>
+                    <botMessages>
+                        <message>Please enter the booking id you want to track.</message>
+                        <messageIdentifier>defdfd90-5c39-480b-9b94-fb91a51d32eb</messageIdentifier>
+                    </botMessages>
+                    <botVariableOperands>
+                        <disableAutoFill>true</disableAutoFill>
+                        <sourceName>_Text</sourceName>
+                        <sourceType>StandardMlSlotClass</sourceType>
+                        <targetName>Booking_Id</targetName>
+                        <targetType>ConversationVariable</targetType>
+                    </botVariableOperands>
+                    <optionalCollect>false</optionalCollect>
+                    <quickReplyWidgetType>Buttons</quickReplyWidgetType>
+                    <type>Collect</type>
+                    <variableOperationIdentifier>11e77092-b06c-4e70-be22-c4433dddb321</variableOperationIdentifier>
+                </botVariableOperation>
+                <stepIdentifier>167f1fae-7437-4a28-a55c-7375779112e9</stepIdentifier>
+                <type>VariableOperation</type>
+            </botSteps>
+            <botSteps>
+                <botVariableOperation>
+                    <botInvocation>
+                        <invocationActionName>EmiratesFetchBookingStatus</invocationActionName>
+                        <invocationActionType>apex</invocationActionType>
+                        <invocationMappings>
+                            <parameterName>booking_id</parameterName>
+                            <type>Input</type>
+                            <variableName>Booking_Id</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>is_success</parameterName>
+                            <type>Output</type>
+                            <variableName>Op_Status</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                        <invocationMappings>
+                            <parameterName>message</parameterName>
+                            <type>Output</type>
+                            <variableName>Booking_Status_Response</variableName>
+                            <variableType>ConversationVariable</variableType>
+                        </invocationMappings>
+                    </botInvocation>
+                    <type>Set</type>
+                    <variableOperationIdentifier>ea9c7c38-6d40-450c-8def-04ab1895a323</variableOperationIdentifier>
+                </botVariableOperation>
+                <stepIdentifier>d9acc399-e29e-42e8-84eb-260192c16c0f</stepIdentifier>
+                <type>VariableOperation</type>
+            </botSteps>
+            <botSteps>
+                <botMessages>
+                    <message>{!Booking_Status_Response}</message>
+                    <messageIdentifier>5486567e-5eb5-404b-a53d-3268476c249e</messageIdentifier>
+                </botMessages>
+                <stepIdentifier>bb102aef-8290-4ce7-b285-cb4145b3aaf9</stepIdentifier>
+                <type>Message</type>
+            </botSteps>
+            <botSteps>
+                <botNavigation>
+                    <botNavigationLinks>
+                        <targetBotDialog>Main_Menu</targetBotDialog>
+                    </botNavigationLinks>
+                    <type>Redirect</type>
+                </botNavigation>
+                <stepIdentifier>e3b05e19-4226-48fe-bf57-48ebae2e4a12</stepIdentifier>
+                <type>Navigation</type>
+            </botSteps>
+            <description>Queries related to flight tracking</description>
+            <developerName>Booking_Query</developerName>
+            <isPlaceholderDialog>false</isPlaceholderDialog>
+            <label>Booking Query</label>
+            <mlIntent>Booking_Query</mlIntent>
+            <mlIntentTrainingEnabled>true</mlIntentTrainingEnabled>
             <showInFooterMenu>false</showInFooterMenu>
         </botDialogs>
         <citationsEnabled>false</citationsEnabled>
@@ -1273,11 +1296,35 @@
             <includeInPrompt>false</includeInPrompt>
             <label>Yes_No_Selection</label>
         </conversationVariables>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <developerName>Booking_User_KA_Query</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>Booking_User_KA_Query</label>
+        </conversationVariables>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <developerName>Create_Booking_Response_Message</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>Create_Booking_Response_Message</label>
+        </conversationVariables>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <developerName>Booking_Cancel_Response</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>Booking_Cancel_Response</label>
+        </conversationVariables>
+        <conversationVariables>
+            <dataType>Text</dataType>
+            <developerName>Booking_Status_Response</developerName>
+            <includeInPrompt>false</includeInPrompt>
+            <label>Booking_Status_Response</label>
+        </conversationVariables>
         <entryDialog>Welcome</entryDialog>
         <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
         <intentV3Enabled>true</intentV3Enabled>
-        <knowledgeActionEnabled>false</knowledgeActionEnabled>
-        <knowledgeFallbackEnabled>true</knowledgeFallbackEnabled>
+        <knowledgeActionEnabled>true</knowledgeActionEnabled>
+        <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
         <mainMenuDialog>Main_Menu</mainMenuDialog>
         <nlpProviders>
             <language>en_US</language>
@@ -1338,6 +1385,7 @@
         <includeInPrompt>true</includeInPrompt>
         <label>Voice Call Id</label>
     </contextVariables>
+    <defaultOutboundFlow>Outbound_Bots_Flow</defaultOutboundFlow>
     <description>A bot from scratch.</description>
     <label>emirates demo</label>
     <logPrivateConversationData>true</logPrivateConversationData>

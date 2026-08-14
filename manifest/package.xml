@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>emirates_demo</fullName>
+    <fullName>Emirates_demo</fullName>
     <types>
-        <members>Airline_Service_GetAirports</members>
-        <members>Airline_Service_GetFlights</members>
         <members>EmiratesCancelBooking</members>
         <members>EmiratesCreateBooking</members>
-        <members>EmiratesFetchFlightStatus</members>
+        <members>EmiratesFetchBookingStatus</members>
+        <members>EmiratesGetAirports</members>
+        <members>EmiratesGetFlights</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -16,6 +16,34 @@
     <types>
         <members>emirates_demo.v1</members>
         <name>BotVersion</name>
+    </types>
+    <types>
+        <members>Flight_Booking__c.Arrival_Date__c</members>
+        <members>Flight_Booking__c.Booking_User__c</members>
+        <members>Flight_Booking__c.Cancelled_On__c</members>
+        <members>Flight_Booking__c.Created_On__c</members>
+        <members>Flight_Booking__c.Departure_Date__c</members>
+        <members>Flight_Booking__c.Destination__c</members>
+        <members>Flight_Booking__c.PNR__c</members>
+        <members>Flight_Booking__c.Source__c</members>
+        <members>Flight_Booking__c.Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Flight_Booking__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Outbound_Bots_Flow</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Flight_Booking__c-Flight Booking Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Emirates_Intents</members>
+        <name>MlDomain</name>
     </types>
     <version>65.0</version>
 </Package>

@@ -1,17 +1,21 @@
 # Emirates Demo — Einstein Bot Training Package
 
-A sample Salesforce Einstein Bot package for use as a **bot-to-Agentforce migration training exercise**. Participants can use this bot as a starting point to practice migrating a real-world airline chatbot to an NGA (Next Generation AI) Agent using AgentScript.
+A sample Salesforce Einstein Bot package for use as a **bot-to-Agentforce migration training exercise**. Participants deploy this bot to practice migrating a real-world airline chatbot to an NGA (Next Generation AI) Agent using AgentScript.
 
 ## What's Included
 
 | File | Description |
 |------|-------------|
 | `force-app/main/default/bots/emirates_demo.bot` | Einstein Bot metadata — dialogs, intents, navigation flows |
-| `force-app/main/default/classes/Airline_Service_GetAirports.cls` | Invocable Apex: returns list of available airports |
-| `force-app/main/default/classes/Airline_Service_GetFlights.cls` | Invocable Apex: returns available flights for a route |
+| `force-app/main/default/mlDomains/Emirates_Intents.mlDomain` | NLP intent model for the bot |
+| `force-app/main/default/classes/EmiratesGetAirports.cls` | Invocable Apex: returns list of available airports |
+| `force-app/main/default/classes/EmiratesGetFlights.cls` | Invocable Apex: returns available flights for a route |
 | `force-app/main/default/classes/EmiratesCreateBooking.cls` | Invocable Apex: stub for creating a booking |
 | `force-app/main/default/classes/EmiratesCancelBooking.cls` | Invocable Apex: stub for cancelling a booking |
-| `force-app/main/default/classes/EmiratesFetchFlightStatus.cls` | Invocable Apex: stub for checking flight status |
+| `force-app/main/default/classes/EmiratesFetchBookingStatus.cls` | Invocable Apex: stub for fetching booking status |
+| `force-app/main/default/flows/Outbound_Bots_Flow.flow` | Flow used by the bot for outbound messaging |
+| `force-app/main/default/objects/Flight_Booking__c.object` | Custom object for storing flight bookings |
+| `force-app/main/default/layouts/Flight_Booking__c-Flight Booking Layout.layout` | Page layout for the custom object |
 | `manifest/package.xml` | Salesforce metadata manifest (API v65.0) |
 | `sfdx-project.json` | SFDX project config |
 
@@ -21,10 +25,8 @@ The Emirates demo bot handles these conversation flows:
 
 - **Flight Search** — ask for available airports and flights between two cities
 - **Create Booking** — collect origin, destination, date, and passenger details; create a stub booking
-- **Cancel Booking** — cancel an existing booking by ID (`booking_12345` is the demo booking)
-- **Check Flight Status** — look up status for flights `FL001` or `FL002`
-- **Career Applications** — routes to external career page
-- **Merchandise** — routes to shopping catalog
+- **Cancel Booking** — cancel an existing booking by ID
+- **Check Booking Status** — look up status of an existing booking
 
 > All Apex actions are **stubs** with hardcoded demo responses — no real airline API connections.
 
@@ -43,13 +45,13 @@ git clone https://github.com/VGBRO/emirates-bot-demo.git
 cd emirates-bot-demo
 
 # Authenticate to your org
-sf org login web --alias my-demo-org
+sf org login web --instance-url https://login.salesforce.com --alias my-demo-org
 
 # Deploy everything using the manifest
 sf project deploy start --manifest manifest/package.xml --target-org my-demo-org
 ```
 
-Or deploy source directly (without manifest):
+Or deploy source directly:
 
 ```bash
 sf project deploy start --source-dir force-app --target-org my-demo-org
@@ -57,7 +59,7 @@ sf project deploy start --source-dir force-app --target-org my-demo-org
 
 ## Training Exercise: Migrate to Agentforce
 
-This package is designed as the **source material** for a bot-to-Agentforce migration exercise. After deploying the Einstein Bot, the challenge is to migrate it to an NGA Agent backed by AgentScript.
+This package is the **source material** for a bot-to-Agentforce migration exercise. After deploying the Einstein Bot, the challenge is to migrate it to an NGA Agent backed by AgentScript.
 
 ### Exercise Goals
 
@@ -78,10 +80,3 @@ This package is designed as the **source material** for a bot-to-Agentforce migr
 | Navigation (Redirect) | `after_reasoning` transition |
 | Navigation (Call) | `before_reasoning` action |
 | Conversation variable | `mutable` variable |
-
-## Notes
-
-- Apex class `Airline_Service_GetAirports` includes airports from India, US, and Europe as demo data.
-- `EmiratesCreateBooking` always returns `booking_id = booking_12345`.
-- `EmiratesCancelBooking` only succeeds for `booking_id = booking_12345`.
-- `EmiratesFetchFlightStatus` returns `available` for `FL001` and `FL002`, `unavailable` for all others.
